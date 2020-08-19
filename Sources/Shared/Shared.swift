@@ -7,7 +7,11 @@ public struct UpdateDevice: Codable {
   public let osVersion: String
   public let channels: [String]?
 
-  public init(id: UUID? = nil, pushToken: String? = nil, system: Device.System, osVersion: String, channels: [String]? = nil) {
+  public init(id: UUID? = nil,
+              pushToken: String? = nil,
+              system: Device.System,
+              osVersion: String,
+              channels: [String]? = nil) {
     self.id = id
     self.pushToken = pushToken
     self.system = system
@@ -28,7 +32,11 @@ public struct Device: Codable {
   public var pushToken: String?
   public var channels: [String]
 
-  public init(id: UUID, system: System, osVersion: String, pushToken: String?, channels: [String]) {
+  public init(id: UUID,
+              system: System,
+              osVersion: String,
+              pushToken: String?,
+              channels: [String]) {
     self.id = id
     self.system = system
     self.osVersion = osVersion

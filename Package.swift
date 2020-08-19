@@ -5,7 +5,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Shared",
+    name: "yesfx-shared",
     products: [
         .library(name: "Shared", targets: ["Shared"]),
     ],
